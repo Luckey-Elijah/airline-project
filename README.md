@@ -150,6 +150,10 @@ The program should display the seat patern with a `X` marking the seats already 
 - Documentation:                    5pts
 - **Total**:                      **100pts**
 
+|Activity|Weight|
+-----------------
+|Algorithm|20pts|
+|Use of object oriented concepts|25pts|
 ## Submission Instructions
 
 Zip up your project folder and upload the zip file to Canvas no later than the due date. In the main class, write the names of all team members as a comment. Only one member of the team can submit the project on Canvas.
