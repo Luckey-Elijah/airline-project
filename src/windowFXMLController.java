@@ -7,8 +7,6 @@ package airlinetoolapp;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.net.URL;
@@ -57,11 +55,16 @@ public class windowFXMLController implements Initializable {
         String departureCity    = departureCityField.getText();
         String arrivalCity      = arrivalCityField.getText();
         String availableSeats   = availableSeatsField.getText();
+        
+        final String dir = System.getProperty("user.dir");
+        String packageString = "\\airlinetoolapp\\";
+        String fileNameFlights = "flight.txt";
+        System.out.println(dir + packageString + fileNameFlights);
+        
         try{
-            flightsIn = new FileInputStream("C:\\Java8\\AirlineToolApp\\src\\resources\\flights.txt");
-            flightsOut = new FileWriter("C:\\Java8\\AirlineToolApp\\src\\resources\\flightsCopy.txt");
+            // flightsIn = new FileInputStream(dir + "");
+            // flightsOut = new FileWriter(dir + "");
             
-            final String dir = System.getProperty("user.dir");
             System.out.println("current dir = " + dir);
             
             int c;
