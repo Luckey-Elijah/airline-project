@@ -17,11 +17,11 @@ By completing htis project you  will gain experience with the following:
 
 ## Project Description
 
-I this project, youwill develop a JavaFX application for an Airline Reservation System. The airline manages the information of several floghts. The informtaion of each flight consists of the following:
+I this project, youwill develop a JavaFX application for an Airline Reservation System. The airline manages the information of several flights. The informtaion of each flight consists of the following:
 - flight number
 - flight date
 - depature time
-- arrivale time
+- arrival time
 - departure city
 - destination city
 - number of available seats
@@ -34,7 +34,7 @@ The passenger seat reservation information consists of the following:
 
 A file named `flights.txt` contains the information of all flights of the airline. The file is stored in the format shown below.
 
-### Figure 1: Contents of `flight.txt`
+### Figure 1: Contents of `flights.txt`
 
 ```
 Flight# FDate   DTime   ATime   DepartCity  DestCity    AvailableSeats
@@ -62,12 +62,12 @@ When the application is started, it should display a `Main Menu` with seven item
 
 - `add a new flight`
     - Ask the user to enter data for a new flight
-    - Create new text file that contains the passengers' seats maps as described in Phase B. Name the file to be the fileght number.
+    - Create new text file that contains the passengers' seats maps as described in Phase B. Name the file to be the flight number.
     - Add flight information to the `flights.txt` file.
 - `make a new reservation`
     - ask the user for the flight number in which the seat is to be reserved
     - ask the user for new passenger ID and name
-    - displat passengers seats maps as described in Phase B
+    - display passengers seats maps as described in Phase B
     - Ask the user to enter seat number (e.g. 2A, 1C, 4D, ... etc)
     - update the number of available seats in this flight
     - Add passengers reservation information to the `reservation.txt` file
@@ -137,7 +137,7 @@ The program should display the seat patern with a `X` marking the seats already 
     - then the display of available seats should be updated as shown in Figure 4
 - if the user types in a seat that is already assigned, the application should say that the selected seat is occupied and ask for another choice.
 - when the program reads data from other text files that contain the seats maps, the data for each seats map should be stored in 2D array of `char` objects of size `10*8`
-- program nust detet all errors and invalid exceptions
+- program nust detete all errors and invalid exceptions
 - you should always return to the menu after completing any operation. the application should not exit until the user chooses the `Exit` option.
 
 ## Grading Policy
